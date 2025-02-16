@@ -1,0 +1,72 @@
+site_name: My Docs
+theme:
+  name: material
+  icon:
+    tag:
+      html: fontawesome/brands/html5
+    logo: material/omega
+  palette:
+    scheme: slate
+    primary: black
+    accent: purple
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - content.code.annotate
+    - content.code.copy
+extra:
+  tags:
+    HTML5: html
+plugins:
+  - tags
+  - search
+  - meta
+  - bibtex:
+      bib_file: "references.bib"
+      csl_file: "ieee.csl"
+markdown_extensions:
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  #- pymdownx.blocks.caption
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_javascript:
+  #- https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  #- https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  #- javascripts/katex.js  # Custom JS file (explained in Step 3)
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: 
+    - index.md
+  - Light Transport:
+    - Radiometry.md
+  - Tag Index:
+    - tags.md
+  - References:
+    - references.md
