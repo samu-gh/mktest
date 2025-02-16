@@ -1,0 +1,1032 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../tags/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Radiometry - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+  
+  
+    
+    
+      
+    
+    
+  
+  
+  <style>.md-tag.md-tag--html{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m0 32 34.9 395.8L191.5 480l157.6-52.2L384 32zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1z"/></svg>');}</style>
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#energy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.15 19h-5.76v-2.13c2.11-1.62 3.2-3.63 3.2-6.03 0-1.5-.43-2.68-1.27-3.55C14.47 6.42 13.37 6 12.03 6c-1.35 0-2.46.42-3.32 1.3-.87.87-1.3 2.07-1.3 3.58 0 2.38 1.09 4.38 3.2 5.99V19H4.85v-2.13h3.56c-2.37-1.55-3.56-3.64-3.56-6.27 0-2.1.65-3.74 1.96-4.94 1.31-1.21 3.03-1.81 5.16-1.81 2.18 0 3.92.6 5.22 1.79 1.31 1.19 1.96 2.86 1.96 4.94 0 2.63-1.2 4.73-3.6 6.29h3.6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Radiometry
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Light Transport
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tags/" class="md-tabs__link">
+          
+  
+  Tag Index
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../references/" class="md-tabs__link">
+          
+  
+  References
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.15 19h-5.76v-2.13c2.11-1.62 3.2-3.63 3.2-6.03 0-1.5-.43-2.68-1.27-3.55C14.47 6.42 13.37 6 12.03 6c-1.35 0-2.46.42-3.32 1.3-.87.87-1.3 2.07-1.3 3.58 0 2.38 1.09 4.38 3.2 5.99V19H4.85v-2.13h3.56c-2.37-1.55-3.56-3.64-3.56-6.27 0-2.1.65-3.74 1.96-4.94 1.31-1.21 3.03-1.81 5.16-1.81 2.18 0 3.92.6 5.22 1.79 1.31 1.19 1.96 2.86 1.96 4.94 0 2.63-1.2 4.73-3.6 6.29h3.6z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Light Transport
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Light Transport
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Radiometry
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Radiometry
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiant-flux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiant Flux
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irradiance-and-radiant-exitance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Irradiance and Radiant Exitance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Irradiance and Radiant Exitance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#at-a-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      At a Point
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intensity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intensity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiometric-spectral-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiometric Spectral Distributions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luminance-and-photometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Luminance and Photometry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Luminance and Photometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#luminance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Luminance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tag Index
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tag Index
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiant-flux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiant Flux
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irradiance-and-radiant-exitance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Irradiance and Radiant Exitance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Irradiance and Radiant Exitance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#at-a-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      At a Point
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intensity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intensity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiometric-spectral-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiometric Spectral Distributions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luminance-and-photometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Luminance and Photometry
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Luminance and Photometry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#luminance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Luminance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+        
+        
+      
+      
+        <a href="../tags/#tag:css" class="md-tag md-tag-icon">CSS</a>
+      
+    
+      
+      
+        
+        
+          
+        
+      
+      
+        <a href="../tags/#tag:html5" class="md-tag md-tag-icon md-tag--html">HTML5</a>
+      
+    
+      
+      
+        
+        
+      
+      
+        <a href="../tags/#tag:javascript" class="md-tag md-tag-icon">JavaScript</a>
+      
+    
+  </nav>
+
+
+
+<h2 id="energy">Energy</h2>
+<p>Units: <em>Joules</em></p>
+<p>Sources of illumination emit photons, each of which is at a particular wavelength and carries a particular amount of energy (in <em>Joules</em>). A photon at wavelength <span class="arithmatex">\(\lambda\)</span> carries energy:</p>
+<div class="admonition note">
+<p class="admonition-title">Add social cards</p>
+<div class="arithmatex">\[\Large Q = \frac{hc}{\lambda}\]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Add social cards</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="hll"><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="hll"><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello, world!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+</span></span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="arithmatex">\[\displaystyle Q = \frac{hc}{\lambda}\]</div>
+<h2 id="radiant-flux">Radiant Flux</h2>
+<p>Units: <em>Joules/second = Watts</em></p>
+<p>In rendering we are mostly interested in measuring light at an instant. <strong>Radiant Flux</strong>, also known as <strong>Power</strong>, is the total amount of energy passing through a surface or region of space per unit time. Its units are Joules/second or more commonly, <em>Watts</em>.</p>
+<div class="arithmatex">\[\Phi = \lim_{\Delta t \rightarrow0} \frac{\Delta Q}{\Delta t} = \frac{dQ}{dt}\]</div>
+<p>Given flux as a function of time, we can therefore also use it to compute the total energy emitted in a stretch of time <span class="arithmatex">\([t_0, t_1]\)</span>:</p>
+<div class="arithmatex">\[Q = \int^{t_1}_{t_0} \Phi(t) \,\, dt\]</div>
+<h2 id="irradiance-and-radiant-exitance">Irradiance and Radiant Exitance</h2>
+<p>Units: <span class="arithmatex">\(\large W/m^2\)</span></p>
+<p>Any measurements of flux requires an area over which photons per time is being measured. Given a finite area <span class="arithmatex">\(\Large A\)</span>, We can define the average density of flux/power over the area by:
+<span class="arithmatex">\(<span class="arithmatex">\(E = \frac{\Phi}{A}\)</span>\)</span>
+It can either express <strong>Irradiance</strong> (area density of flux arriving at a surface) or <strong>Radiant Exitance</strong> (area density of flux leaving a surface).</p>
+<h4 id="at-a-point">At a Point</h4>
+<div class="arithmatex">\[E(p) = \lim_{\Delta A \rightarrow 0} \frac{\Delta \Phi(p)}{\Delta A} = \frac{d\Phi(p)}{dA}\]</div>
+<p>Therefore, we can also go from irradiance at a point to power by integrating over the area:
+<span class="arithmatex">\(<span class="arithmatex">\(\Phi = \int_A E(p) \,\, dA\)</span>\)</span></p>
+<h2 id="intensity">Intensity</h2>
+<p>Units: <span class="arithmatex">\(\large W/sr\)</span></p>
+<p>Consider an infinitesimal light source emitting photons. If we center this light within the unit sphere, we can compute the <em>angular density of emitted power</em>, <strong>Intensity</strong>.
+Over the entire sphere of directions, we have:
+<span class="arithmatex">\(<span class="arithmatex">\(I = \frac{\Phi}{4\pi}\)</span>\)</span>
+but more generally we are interested in taking the limit of a differential cone of directions:
+<span class="arithmatex">\(<span class="arithmatex">\(I = \lim_{\Delta\omega\rightarrow 0} \frac{\Delta \Phi}{\Delta\omega} = \frac{d\Phi}{d\omega}\)</span>\)</span>
+As usual we can go back to flux (power), integrating over the finite set of directions <span class="arithmatex">\(\large \Omega\)</span>:
+<span class="arithmatex">\(<span class="arithmatex">\(\Phi = \int_{\Omega} I(\omega)\,\,d\omega\)</span>\)</span></p>
+<h2 id="radiance">Radiance</h2>
+<p>Units: <span class="arithmatex">\(\large W/(sr \cdot m^2)\)</span></p>
+<p><em>Irradiance</em> and <em>Radiant Exitance</em> give us differential power power per differential area at a point, <strong>but do not distinguish the directional distribution of power</strong>. Radiance measures irradiance or radiant exitance with respect to solid angles:
+<span class="arithmatex">\(<span class="arithmatex">\(L(p, \omega) = \lim_{\Delta\omega\rightarrow 0} \frac{\Delta E_{\omega}(p)}{\Delta \omega} = \frac{dE_{\omega}(p)}{d\omega} = \frac{d E(p)}{d\omega\, \lvert\cos{\theta}\rvert} = \frac{d^2 \Phi}{d\omega \, dA\,\lvert\cos{\theta}\rvert} = \frac{d^2 \Phi}{d\omega\, dA^{\perp}}\)</span>\)</span>
+<span class="arithmatex">\(\large E_{\omega}\)</span> denotes irradiance at the surface that is perpendicular to the direction <span class="arithmatex">\(\large\omega\)</span>:
+![[Pasted image 20240504212349.png|Radiance <span class="arithmatex">\(L\)</span>]]</p>
+<h2 id="radiometric-spectral-distributions">Radiometric Spectral Distributions</h2>
+<p>We can define all quantities above in function of wavelength <span class="arithmatex">\(\large \lambda\)</span>. For example, we can define <em>spectral radiance</em> <span class="arithmatex">\(\large L_{\lambda}\)</span> as the limit of radiance over an infinitesimal interval of wavelengths <span class="arithmatex">\(\large \Delta\lambda\)</span>,
+<span class="arithmatex">\(<span class="arithmatex">\(L_{\lambda} = \lim_{\Delta\lambda\rightarrow 0} = \frac{\Delta L}{\Delta\lambda} = \frac{dL}{d\lambda}\)</span>\)</span>
+In turn, radiance can be found by integrating spectral radiance over a range of wavelengths:
+<span class="arithmatex">\(<span class="arithmatex">\(L = \int_{\lambda_0}^{\lambda_1} L_{\lambda}(\lambda)\,\,d\lambda\)</span>\)</span></p>
+<h2 id="luminance-and-photometry">Luminance and Photometry</h2>
+<p>All the radiometric measurements like flux, radiance and so forth have corresponding photometric measurements. <em>Photometry</em> is the <em>study of visible electromagnetic radiation in terms of its perception by the human visual system</em>.</p>
+<blockquote>
+<p>Each spectral radiometric quantity can be converted to its corresponding photometric quantity by integrating against the spectral response curve <span class="arithmatex">\(\large V(\lambda)\)</span>, which describes the relative sensitivity of the human eye to various wavelengths.</p>
+</blockquote>
+<h4 id="luminance">Luminance</h4>
+<p>Units: <span class="arithmatex">\(\large cd/m^2\)</span></p>
+<p>It measures how bright a spectral power distribution appears to a human observer. It is related to spectral radiance and we will denote <em>luminance</em> by <span class="arithmatex">\(\large Y\)</span> <sup id="fnref:smith2020"><a class="footnote-ref" href="#fn:smith2020">1</a></sup>:
+<span class="arithmatex">\(<span class="arithmatex">\(Y = \int_{\lambda} L_{\lambda}(\lambda)\,V(\lambda)\,\,d\lambda\)</span>\)</span></p>
+<mark class="critic block">
+<p>Formatting can also be applied to blocks by putting the opening and closing
+tags on separate lines and adding new lines between the tags and the content. <sup id="fnref:bitterli_spatiotemporal_2020"><a class="footnote-ref" href="#fn:bitterli_spatiotemporal_2020">2</a></sup></p>
+</mark>
+<h1 id="references">References</h1>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:smith2020">
+<p>J. Smith, "An introduction to MkDocs and citations," <em>Markdown Studies</em>, vol. 12, pp. 34--56, 2020.&#160;<a class="footnote-backref" href="#fnref:smith2020" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:bitterli_spatiotemporal_2020">
+<p>B. Bitterli, C. Wyman, M. Pharr, P. Shirley, A. Lefohn, and W. Jarosz, "Spatiotemporal reservoir resampling for real-time ray tracing with dynamic direct lighting," <em>ACM Transactions on Graphics</em>, vol. 39, no. 4, pp. 148:148:1--148:148:17, 2020, doi: <a href="https://doi.org/10.1145/3386569.3392481">10.1145/3386569.3392481</a>.&#160;<a class="footnote-backref" href="#fnref:bitterli_spatiotemporal_2020" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tracking", "navigation.sections", "navigation.expand", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": {"HTML5": "html"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
